@@ -1,0 +1,22 @@
+{
+	"Patient-List": [
+		{
+			"PatientID": "54",
+			"PatientMobNo": "5446564",
+			"PatientName": "Shankar",
+			"Age": "25"
+		},
+		{
+			"PatientID": "25",
+			"PatientMobNo": "98181055",
+			"PatientName": "Anit",
+			"Age": "28"
+		},
+		{
+			"PatientID": "35",
+			"PatientMobNo": "95122184",
+			"PatientName": "Ayush",
+			"Age": "27"
+		}
+	]
+}

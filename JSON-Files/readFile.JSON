@@ -1,0 +1,15 @@
+{
+	"Rice" : [
+		{"name" : "Basmati","weight":25,"price":60},
+		{"name" : "Kohinoor","weight":25,"price":70},
+		{"name" : "Biryani","weight":25,"price":50}
+		],
+	"Wheat" : [
+		{"name" : "Aata","weight":25,"price":20},
+		{"name" : "Bajra","weight":25,"price":25},
+		{"name" : "Makke","weight":25,"price":30}
+	],
+	"Pulses" : [
+		
+	]
+}

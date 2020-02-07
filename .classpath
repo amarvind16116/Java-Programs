@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="src" path="/OOPs"/>
+	<classpathentry kind="lib" path="/home/admin1/Desktop/Arvind/23-Nov-2019-master/FellowShip/Lib/mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="lib" path="/home/admin1/Desktop/Arvind/23-Nov-2019-master/FellowShip/Lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/admin1/Desktop/Arvind/23-Nov-2019-master/FellowShip/Lib/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/home/admin1/Desktop/Arvind/23-Nov-2019-master/FellowShip/Lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Arvind/Desktop/23-Nov-2019-master/Advance-Java/WebContent/WEB-INF/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

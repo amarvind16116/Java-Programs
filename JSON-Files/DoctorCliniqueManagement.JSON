@@ -1,0 +1,28 @@
+{
+	"Doctor-List": [
+		{
+			"DoctorName": "Arvind",
+			"Specialization": "Heart",
+			"Appointments": "3",
+			"Time": "5",
+			"id": "1454",
+			"Shifts": "PM"
+		},
+		{
+			"DoctorName": "Shubham",
+			"Specialization": "Cancer",
+			"Appointments": "4",
+			"Time": "9",
+			"id": "5464",
+			"Shifts": "AM"
+		},
+		{
+			"DoctorName": "Sunny",
+			"Specialization": "Kidney",
+			"Appointments": "5",
+			"Time": "11",
+			"id": "Raj",
+			"Shifts": "PM"
+		}
+	]
+}

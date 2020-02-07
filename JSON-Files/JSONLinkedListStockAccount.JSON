@@ -1,0 +1,38 @@
+{
+	"company1": [
+		{
+			"name": "TCS",
+			"perSharePrice": "67",
+			"stock": "134"
+		},
+		{
+			"name": "Infosys",
+			"perSharePrice": "45",
+			"stock": "200"
+		},
+		{
+			"name": "Reliance",
+			"perSharePrice": "21",
+			"stock": "1"
+		},
+		{
+			"name": "Accenture",
+			"perSharePrice": "40",
+			"stock": "96"
+		},
+		[
+			{
+				"name": "Mindtree",
+				"perSharePrice": "20.0",
+				"stock": "852"
+			}
+		],
+		[
+			{
+				"name": "Genpact",
+				"perSharePrice": "12.0",
+				"stock": "2589"
+			}
+		]
+	]
+}
