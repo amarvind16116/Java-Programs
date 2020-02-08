@@ -10,7 +10,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import com.bridgelabz.oops.jSON_Inventry.inventryManagement.InventryBean;
+import com.bridgelabz.oops.jSON_Inventry.inventryManagement.model.InventryBean;
 import com.bridgelabz.oops.jSON_Inventry.inventryManagement.i_services.InventryInterface;
 import com.bridgelabz.utils.InputUtility;
 
@@ -24,7 +24,7 @@ public class InventryServices implements InventryInterface {
 
 	private static final String PATH = "/home/admin1/Desktop/Arvind/FellowShip/Lib/WriteFile.JSON";
 	private static final String READ_PATH = "/home/admin1/Desktop/Arvind/FellowShip/Lib/readFile.JSON";
-	
+	InventryBean inventrybean = new InventryBean();
 	@Override
 	public void writeFile() {
 		JSONObject jo1 = new JSONObject();
@@ -35,33 +35,33 @@ public class InventryServices implements InventryInterface {
 
 			System.out.println("Enter the key for Inventry (Rice,Wheat,Pulses): ");
 
-			String str = InventryBean.setKey(InputUtility.nextString());
-			if (InventryBean.getKey().equalsIgnoreCase("rice") || InventryBean.getKey().equalsIgnoreCase("wheat")
-					|| InventryBean.getKey().equalsIgnoreCase("pulses")) {
+			String str = inventrybean.setKey(InputUtility.nextString());
+			if (inventrybean.getKey().equalsIgnoreCase("rice") || inventrybean.getKey().equalsIgnoreCase("wheat")
+					|| inventrybean.getKey().equalsIgnoreCase("pulses")) {
 
 				JSONArray jarr = new JSONArray();
 
-				System.out.println("How many types of " + InventryBean.getKey() + " you want to add");
+				System.out.println("How many types of " + inventrybean.getKey() + " you want to add");
 				int num2 = InputUtility.nextInt();
 				while (num2 > 0) {
 					JSONObject jo = new JSONObject();
 
-					System.out.print("Enter the varaitey name of " + InventryBean.getKey() + " : ");
-					InventryBean.setName(InputUtility.nextString());
-					jo.put("Name", InventryBean.getName());
+					System.out.print("Enter the varaitey name of " + inventrybean.getKey() + " : ");
+					inventrybean.setName(InputUtility.nextString());
+					jo.put("Name", inventrybean.getName());
 
-					System.out.print("Enter the Weight of " + InventryBean.getKey() + " : ");
-					InventryBean.setWeight(Integer.parseInt(InputUtility.nextString()));
-					jo.put("Weight", InventryBean.getWeight());
+					System.out.print("Enter the Weight of " + inventrybean.getKey() + " : ");
+					inventrybean.setWeight(Integer.parseInt(InputUtility.nextString()));
+					jo.put("Weight", inventrybean.getWeight());
 
-					System.out.print("Enter the Price of " + InventryBean.getKey() + " : ");
-					InventryBean.setPrice((Integer.parseInt(InputUtility.nextString())));
-					jo.put("Price", InventryBean.getPrice());
+					System.out.print("Enter the Price of " + inventrybean.getKey() + " : ");
+					inventrybean.setPrice((Integer.parseInt(InputUtility.nextString())));
+					jo.put("Price", inventrybean.getPrice());
 
-					InventryBean.setGrandTotal((InventryBean.getWeight() * InventryBean.getPrice()));
-					System.out.println("Now Grand Total is generate automatically " + InventryBean.getKey() + " : "
-							+ InventryBean.getGrandTotal());
-					jo.put("GrandTotal", InventryBean.getGrandTotal());
+					inventrybean.setGrandTotal((inventrybean.getWeight() * inventrybean.getPrice()));
+					System.out.println("Now Grand Total is generate automatically " + inventrybean.getKey() + " : "
+							+ inventrybean.getGrandTotal());
+					jo.put("GrandTotal", inventrybean.getGrandTotal());
 					jarr.add(jo);
 					num2--;
 				}

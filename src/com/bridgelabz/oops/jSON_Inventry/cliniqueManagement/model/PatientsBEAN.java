@@ -9,33 +9,33 @@ package com.bridgelabz.oops.jSON_Inventry.cliniqueManagement.model;
 
 public class PatientsBEAN {
 	
-	private static String patientName;
-	private static String patientID;
-	private static String patientMobNo;
-	private static String patientAge;
+	private String patientName;
+	private String patientID;
+	private String patientMobNo;
+	private String patientAge;
 	
-	public static String getPatientName() {
+	public String getPatientName() {
 		return patientName;
 	}
-	public static String setPatientName(String patientName) {
-		return PatientsBEAN.patientName = patientName;
+	public String setPatientName(String patientName) {
+		return this.patientName = patientName;
 	}
-	public static String getPatientID() {
+	public String getPatientID() {
 		return patientID;
 	}
-	public static String setPatientID(String patientID) {
-		return PatientsBEAN.patientID = patientID;
+	public String setPatientID(String patientID) {
+		return this.patientID = patientID;
 	}
-	public static String getPatientMobNo() {
+	public String getPatientMobNo() {
 		return patientMobNo;
 	}
-	public static String setPatientMobNo(String patientMobNo) {
-		return PatientsBEAN.patientMobNo = patientMobNo;
+	public String setPatientMobNo(String patientMobNo) {
+		return this.patientMobNo = patientMobNo;
 	}
-	public static String getPatientAge() {
+	public String getPatientAge() {
 		return patientAge;
 	}
-	public static String setPatientAge(String patientAge) {
-		return PatientsBEAN.patientAge = patientAge;
+	public String setPatientAge(String patientAge) {
+		return this.patientAge = patientAge;
 	}
 }

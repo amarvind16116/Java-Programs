@@ -8,48 +8,48 @@ package com.bridgelabz.oops.jSON_Inventry.cliniqueManagement.model;
 
 public class DoctorsBEAN {
 	
-	private static String doctorName;
-	private static String doctorID;
-	private static String specialization;
-	private static String timeAvailability;
-	private static String time_AM_PM;
+	private String doctorName;
+	private String doctorID;
+	private String specialization;
+	private String timeAvailability;
+	private String time_AM_PM;
+	private String appointment;
 	
-	public static String getTime_AM_PM() {
+	public String getTime_AM_PM() {
 		return time_AM_PM;
 	}
-	public static String setTime_AM_PM(String time_AM_PM) {
-		return DoctorsBEAN.time_AM_PM = time_AM_PM;
+	public String setTime_AM_PM(String time_AM_PM) {
+		return this.time_AM_PM = time_AM_PM;
 	}
-	public static String getAppointment() {
+	public String getAppointment() {
 		return appointment;
 	}
-	public static String setAppointment(String appointment) {
-		return DoctorsBEAN.appointment = appointment;
+	public String setAppointment(String appointment) {
+		return this.appointment = appointment;
 	}
-	private static String appointment;
 	
-	public static String getDoctorName() {
+	public String getDoctorName() {
 		return doctorName;
 	}
-	public static String setDoctorName(String doctorName) {
-		return DoctorsBEAN.doctorName = doctorName;
+	public String setDoctorName(String doctorName) {
+		return this.doctorName = doctorName;
 	}
-	public static String getDoctorID() {
+	public String getDoctorID() {
 		return doctorID;
 	}
-	public static String setDoctorID(String doctorID) {
-		return DoctorsBEAN.doctorID = doctorID;
+	public String setDoctorID(String doctorID) {
+		return this.doctorID = doctorID;
 	}
-	public static String getSpecialization() {
+	public String getSpecialization() {
 		return specialization;
 	}
-	public static String setSpecialization(String specialization) {
-		return DoctorsBEAN.specialization = specialization;
+	public String setSpecialization(String specialization) {
+		return this.specialization = specialization;
 	}
-	public static String getTimeAvailability() {
+	public String getTimeAvailability() {
 		return timeAvailability;
 	}
-	public static String setTimeAvailability(String timeAvailability) {
-		return DoctorsBEAN.timeAvailability = timeAvailability;
+	public String setTimeAvailability(String timeAvailability) {
+		return this.timeAvailability = timeAvailability;
 	}
 }

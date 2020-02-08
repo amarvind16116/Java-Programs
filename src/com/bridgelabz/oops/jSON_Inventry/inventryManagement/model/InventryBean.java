@@ -8,40 +8,40 @@ package com.bridgelabz.oops.jSON_Inventry.inventryManagement.model;
  */
 
 public class InventryBean {
-	private static String key;
-	private static String name;
-	private static int weight;
-	private static int price;
-	private static int grandTotal;
+	private String key;
+	private String name;
+	private int weight;
+	private int price;
+	private int grandTotal;
 	
-	public static int getGrandTotal() {
+	public int getGrandTotal() {
 		return grandTotal;
 	}
-	public static int setGrandTotal(int grandTotal) {
-		return InventryBean.grandTotal = grandTotal;
+	public int setGrandTotal(int grandTotal) {
+		return this.grandTotal = grandTotal;
 	}
-	public static String getKey() {
+	public String getKey() {
 		return key;
 	}
-	public static String setKey(String key) {
-		return InventryBean.key = key;
+	public String setKey(String key) {
+		return this.key = key;
 	}
-	public static String getName() {
+	public String getName() {
 		return name;
 	}
-	public static void setName(String name) {
-		InventryBean.name = name;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public static int getWeight() {
+	public int getWeight() {
 		return weight;
 	}
-	public static void setWeight(int weight) {
-		InventryBean.weight = weight;
+	public void setWeight(int weight) {
+		this.weight = weight;
 	}
-	public static int getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public static void setPrice(int price) {
-		InventryBean.price = price;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 }

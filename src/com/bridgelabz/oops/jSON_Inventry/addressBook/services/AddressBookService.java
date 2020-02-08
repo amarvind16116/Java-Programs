@@ -1,4 +1,4 @@
-package com.bridgelabz.oops.jsoninventry.addressbook.services;
+package com.bridgelabz.oops.jSON_Inventry.addressBook.services;
 
 import org.json.simple.JSONObject;
 

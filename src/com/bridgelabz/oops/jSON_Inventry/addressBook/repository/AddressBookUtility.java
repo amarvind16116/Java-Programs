@@ -9,27 +9,25 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import com.bridgelabz.oops.jSON_Inventry.addressBook.model.AddressBookBEAN;
+import com.bridgelabz.oops.jSON_Inventry.addressBook.services.AddressBookService;
 import com.bridgelabz.oops.jSON_Inventry.stockManagement.LinkedList;
-import com.bridgelabz.oops.jsoninventry.addressbook.services.AddressBookService;
 import com.bridgelabz.utils.InputUtility;
 
 /**
- * @author Arvind
- *  Date: 3/12/2019 
- *  purpose: program to write method of adddress book to write details,
- *  read details, sort by last name, sort by zip 
+ * @author Arvind Date: 3/12/2019 purpose: program to write method of adddress
+ *         book to write details, read details, sort by last name, sort by zip
  */
 
 public class AddressBookUtility implements AddressBookService {
-	
+
 	private static final String PATH = "/home/admin1/Desktop/Arvind/FellowShip/Lib/AddressBook.JSON";
-	
+
 	static AddressBookBEAN addressBookBean = new AddressBookBEAN();
 
 	static JSONObject jsonObject;
 	static JSONArray jsonArray;
 	static JSONObject jsonMainObj;
-	
+
 	static FileWriter fileWriter;
 	static FileReader fileReader;
 	static Object object;
@@ -37,7 +35,6 @@ public class AddressBookUtility implements AddressBookService {
 	// Method of take entries from the users
 	// also append all the entries in my OWN linked list
 
-	@SuppressWarnings({ "static-access", "unchecked" })
 	public void addEntries(LinkedList linkedList) throws Exception {
 
 		jsonObject = new JSONObject();
@@ -77,7 +74,6 @@ public class AddressBookUtility implements AddressBookService {
 
 	// Method for write the details of person in JSON File
 
-	@SuppressWarnings("unchecked")
 	public void writeAddressBook(LinkedList list, JSONObject obj) throws Exception {
 
 		jsonArray = new JSONArray();
@@ -254,8 +250,6 @@ public class AddressBookUtility implements AddressBookService {
 		Arrays.sort(lastName);
 		for (int i = 0; i < lastName.length; i++) {
 			JSONObject jo;
-			JSONObject jo1 = null;
-			int count = 0;
 			for (int j = 0; j < lastName.length; j++) {
 				jo = (JSONObject) jsonArray.get(j);
 				String lname = (String) jo.get("Last_Name");
@@ -308,8 +302,6 @@ public class AddressBookUtility implements AddressBookService {
 		Arrays.sort(pinCode);
 		for (int i = 0; i < pinCode.length; i++) {
 			JSONObject jo;
-			JSONObject jo1 = null;
-			int count = 0;
 			for (int j = 0; j < pinCode.length; j++) {
 				jo = (JSONObject) jsonArray.get(j);
 				String lname = (String) jo.get("PinCode");

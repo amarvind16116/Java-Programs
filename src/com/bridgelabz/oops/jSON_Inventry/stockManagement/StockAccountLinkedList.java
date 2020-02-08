@@ -21,19 +21,21 @@ public class StockAccountLinkedList {
 	
 	private static final String PATH = "/home/admin1/Desktop/Arvind/FellowShip/Lib/StockAccount.JSON";
 	
+	static StockManagementBean stockmanagementbean = new StockManagementBean();
+	
 	public static void addValues(LinkedList l)
 	{
 		System.out.println("Enter new Company name:");
-		StockManagementBean.setStockName(InputUtility.nextString());
+		stockmanagementbean.setStockName(InputUtility.nextString());
 		System.out.println("Enter Stock value");
-		StockManagementBean.setStockShares(InputUtility.nextString());
+		stockmanagementbean.setStockShares(InputUtility.nextString());
 		System.out.println("Enter per Stock value");
-		StockManagementBean.setPersharePrice(InputUtility.nextInt());
+		stockmanagementbean.setPersharePrice(InputUtility.nextInt());
 		JSONArray arr=new JSONArray();
 		JSONObject obj1=new JSONObject();
-		obj1.put("name", StockManagementBean.getStockName());
-		obj1.put("stock", StockManagementBean.getStockShares());
-		obj1.put("perSharePrice", StockManagementBean.getPersharePrice()+"");
+		obj1.put("name", stockmanagementbean.getStockName());
+		obj1.put("stock", stockmanagementbean.getStockShares());
+		obj1.put("perSharePrice", stockmanagementbean.getPersharePrice()+"");
 		arr.add(obj1);
 		l.append(obj1);
 		l.display();
@@ -54,15 +56,6 @@ public class StockAccountLinkedList {
 		file.close();
 		System.out.println("Values Written in json file");
 	}
-	public static void removeValue(JSONObject obj) throws Exception
-	{
-		
-		JSONArray arr=(JSONArray)obj.get("company");
-		System.out.println("ENTER COMPANY YOU WANT TO REMOVE:");
-		String companyName=InputUtility.nextString();
-	}
-	
-	
 	
 	public static void main(String[] args) throws Exception {
 		

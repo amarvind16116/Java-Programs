@@ -14,61 +14,61 @@ package com.bridgelabz.oops.jSON_Inventry.addressBook.model;
 
 public class AddressBookBEAN {
 	
-	private static String firstName;
-	private static String lastName;
-	private static String address;
-	private static String city;
-	private static String state;
-	private static String zip;
-	private static String phoneNum;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String city;
+	private String state;
+	private String zip;
+	private String phoneNum;
 	
-	public static String getFirstName() {
+	public String getFirstName() {
 		return firstName;
 	}
-	public static String setFirstName(String firstName) {
-		return AddressBookBEAN.firstName = firstName;
+	public String setFirstName(String firstName) {
+		return this.firstName = firstName;
 	}
 	
-	public static String getLastName() {
+	public String getLastName() {
 		return lastName;
 	}
-	public static String setLastName(String lastName) {
-		return AddressBookBEAN.lastName = lastName;
+	public String setLastName(String lastName) {
+		return this.lastName = lastName;
 	}
 	
-	public static String getAddress() {
+	public String getAddress() {
 		return address;
 	}
-	public static String setAddress(String address) {
-		return AddressBookBEAN.address = address;
+	public String setAddress(String address) {
+		return this.address = address;
 	}
 	
-	public static String getCity() {
+	public String getCity() {
 		return city;
 	}
-	public static String setCity(String city) {
-		return AddressBookBEAN.city = city;
+	public String setCity(String city) {
+		return this.city = city;
 	}
 	
-	public static String getState() {
+	public  String getState() {
 		return state;
 	}
-	public static String setState(String state) {
-		return AddressBookBEAN.state = state;
+	public String setState(String state) {
+		return this.state = state;
 	}
 	
-	public static String getZip() {
+	public  String getZip() {
 		return zip;
 	}
-	public static String setZip(String zip) {
-		return AddressBookBEAN.zip = zip;
+	public  String setZip(String zip) {
+		return this.zip = zip;
 	}
 	
-	public static String getPhoneNum() {
+	public  String getPhoneNum() {
 		return phoneNum;
 	}
-	public static String setPhoneNum(String phoneNum) {
-		return AddressBookBEAN.phoneNum = phoneNum;
+	public String setPhoneNum(String phoneNum) {
+		return this.phoneNum = phoneNum;
 	}
 	
 	

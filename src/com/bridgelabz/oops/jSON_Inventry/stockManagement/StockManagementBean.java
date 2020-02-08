@@ -9,33 +9,33 @@ package com.bridgelabz.oops.jSON_Inventry.stockManagement;
 
 
 public class StockManagementBean {
-	private static String stockName;
-	private static String stockShares;
-	private static double sharePrice;
-	private static double persharePrice;
+	private String stockName;
+	private String stockShares;
+	private double sharePrice;
+	private double persharePrice;
 	
-	public static double getPersharePrice() {
+	public double getPersharePrice() {
 		return persharePrice;
 	}
-	public static void setPersharePrice(double d) {
-		StockManagementBean.persharePrice = d;
+	public void setPersharePrice(double d) {
+		this.persharePrice = d;
 	}
-	public static String getStockName() {
+	public String getStockName() {
 		return stockName;
 	}
-	public static String setStockName(String stockName) {
-		return StockManagementBean.stockName = stockName;
+	public String setStockName(String stockName) {
+		return this.stockName = stockName;
 	}
-	public static String getStockShares() {
+	public String getStockShares() {
 		return stockShares;
 	}
-	public static String setStockShares(String string) {
-		return StockManagementBean.stockShares = string;
+	public String setStockShares(String string) {
+		return this.stockShares = string;
 	}
-	public static double getSharePrice() {
+	public double getSharePrice() {
 		return sharePrice;
 	}
-	public static double setSharePrice(double sharePrice) {
-		return StockManagementBean.sharePrice = sharePrice;
+	public double setSharePrice(double sharePrice) {
+		return this.sharePrice = sharePrice;
 	}
 }

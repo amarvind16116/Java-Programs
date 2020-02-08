@@ -10,51 +10,49 @@ package com.bridgelabz.oops.jSON_Inventry.stockManagement;
 
 
 public class StockBuyerBean {
-	private static String stockBuyerReport;
+	private String stockBuyerReport;
 	
-	private static	String firstName;
-	private static String lastName;
-	private static String companyName;
-	private static int totalBoughtShare;
-	private static int totalPrice;
+	private	String firstName;
+	private String lastName;
+	private String companyName;
+	private int totalBoughtShare;
+	private int totalPrice;
 	
-	
-	
-	public static String getStockBuyerReport() {
+	public String getStockBuyerReport() {
 		return stockBuyerReport;
 	}
-	public static String setStockBuyerReport(String stockBuyerReport) {
-		return StockBuyerBean.stockBuyerReport = stockBuyerReport;
+	public String setStockBuyerReport(String stockBuyerReport) {
+		return this.stockBuyerReport = stockBuyerReport;
 	}
 	
-	public static String getFirstName() {
+	public String getFirstName() {
 		return firstName;
 	}
-	public static String setFirstName(String firstName) {
-		return StockBuyerBean.firstName = firstName;
+	public String setFirstName(String firstName) {
+		return this.firstName = firstName;
 	}
-	public static String getLastName() {
+	public String getLastName() {
 		return lastName;
 	}
-	public static String setLastName(String lastName) {
-		return StockBuyerBean.lastName = lastName;
+	public String setLastName(String lastName) {
+		return this.lastName = lastName;
 	}
-	public static String getCompanyName() {
+	public String getCompanyName() {
 		return companyName;
 	}
-	public static String setCompanyName(String companyName) {
-		return StockBuyerBean.companyName = companyName;
+	public String setCompanyName(String companyName) {
+		return this.companyName = companyName;
 	}
-	public static int getTotalBoughtShare() {
+	public int getTotalBoughtShare() {
 		return totalBoughtShare;
 	}
-	public static int setTotalBoughtShare(int totalBoughtShare) {
-		return StockBuyerBean.totalBoughtShare = totalBoughtShare;
+	public int setTotalBoughtShare(int totalBoughtShare) {
+		return this.totalBoughtShare = totalBoughtShare;
 	}
-	public static int getTotalPrice() {
+	public int getTotalPrice() {
 		return totalPrice;
 	}
-	public static int setTotalPrice(int totalPrice) {
-		return StockBuyerBean.totalPrice = totalPrice;
+	public int setTotalPrice(int totalPrice) {
+		return this.totalPrice = totalPrice;
 	}
 }
